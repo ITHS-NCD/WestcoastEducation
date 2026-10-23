@@ -3,13 +3,14 @@ using Client.Persistence;
 
 namespace Client.Models;
 
-public class EducationalLeader(string personNr) : IPerson
+public class EducationalLeader(string personNr) : Teacher(personNr)
 {
-    public string PersonNumber { get; set; } = personNr;
-    public required string FirstName { get; set; }
-    public required string LastName { get; set; }
-    public required string Email { get; set; }
-    public required string PhoneNumber { get; set; }
-    public required Address Address { get; set; }
     public required string EmploymentDate { get; set; }
+
+    public void AddEducationLeader()
+    {
+        EducationalService service = new();
+        service.Add(this);
+    }
+
 }

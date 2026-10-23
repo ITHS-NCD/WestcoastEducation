@@ -1,0 +1,16 @@
+[
+  {
+    "knowledge": "Programmering med olika spårk",
+    "responsibility": "Programmering med C#",
+    "personNumber": "19990101-9876",
+    "firstName": "Lukas",
+    "lastName": "Svensson",
+    "email": "l.svensson@mail.se",
+    "phoneNumber": "0760-987654",
+    "address": {
+      "addressLine": "Vårlöksvägen 73",
+      "postalCode": "446 36",
+      "city": "Älvängen"
+    }
+  }
+]

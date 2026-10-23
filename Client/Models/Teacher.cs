@@ -1,16 +1,16 @@
 ﻿using Client.Interfaces;
+using Client.Services;
 
 namespace Client.Models;
 
-public class Teacher(string personNumber) : IPerson
+public class Teacher(string personNumber) : Student(personNumber)
 {
-    public string PersonNumber { get; set; } = personNumber;
-    public required string FirstName { get; set; }
-    public required string LastName { get; set; }
-    public required string Email { get; set; }
-    public required string PhoneNumber { get; set; }
-    public required Address Address { get; set; }
     public string? Knowledge { get; set; }
     public string? Responsibility { get; set; }
 
+    public void AddTeacher()
+    {
+        TeacherService service = new();
+        service.Add(this);
+    }
 }

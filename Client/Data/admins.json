@@ -1,0 +1,17 @@
+[
+  {
+    "employmentDate": "2025-06-30",
+    "knowledge": null,
+    "responsibility": null,
+    "personNumber": "19800303-5869",
+    "firstName": "Lisa",
+    "lastName": "Andersson",
+    "email": "andersson@mail.com",
+    "phoneNumber": "0805-258369",
+    "address": {
+      "addressLine": "Vägen 24",
+      "postalCode": "444 25",
+      "city": "Landvetter"
+    }
+  }
+]

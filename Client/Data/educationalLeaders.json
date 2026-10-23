@@ -1,0 +1,17 @@
+[
+  {
+    "employmentDate": "2020-05-23",
+    "knowledge": null,
+    "responsibility": null,
+    "personNumber": "19900202-2345",
+    "firstName": "Håkan",
+    "lastName": "Johansson",
+    "email": "johanssonhakan@outlook.com",
+    "phoneNumber": "031-489562",
+    "address": {
+      "addressLine": "Gatan 1",
+      "postalCode": "123 45",
+      "city": "Mölndal"
+    }
+  }
+]
