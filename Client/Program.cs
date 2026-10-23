@@ -7,17 +7,6 @@ class Program
 {
     static void Main()
     {
-        Course course = new("Programering med C#")
-        {
-            Length = "10 veckor",
-            Start = "2026-10-10",
-            Stop = "2026-12-31",
-            ClassRoom = true,
-        };
-        Console.WriteLine($"Lägger till en kurs: {course}");
-        course.AddCourse();
-
-        Console.WriteLine("===========================================================================");
 
         Student student = new("19501212 - 1234")
         {
@@ -28,7 +17,33 @@ class Program
             Address = new Address { AddressLine = "Mölndalsvägen 69A", PostalCode = "412 85", City = "Göteborg" }
         };
         Console.WriteLine($"Lägger till en elev: {student}");
-        student.AddStudent();
+        student.AddStudent(student);
+
+        Console.WriteLine("===========================================================================");
+
+        Student student2 = new("19930505-8520")
+        {
+            FirstName = "Bengt",
+            LastName = "Börjesson",
+            Email = "bengt.b@mail.com",
+            PhoneNumber = "0709-485236",
+            Address = new Address { AddressLine = "Folkgatan 16", PostalCode = "418 32", City = "Stenungsund" }
+        };
+        Console.WriteLine($"Lägger till en elev: {student2}");
+        student.AddStudent(student2);
+
+        Console.WriteLine("===========================================================================");
+
+        Course course = new("Programering med C#")
+        {
+            Length = "10 veckor",
+            Start = "2026-10-10",
+            Stop = "2026-12-31",
+            ClassRoom = true,
+            Students = [student, student2]
+        };
+        Console.WriteLine($"Lägger till en kurs: {course}");
+        course.AddCourse();
 
         Console.WriteLine("===========================================================================");
 

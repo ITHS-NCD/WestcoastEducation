@@ -19,10 +19,10 @@ public class Student : IPerson
         PersonNumber = personNumber;
     }
 
-    public void AddStudent()
+    public void AddStudent(Student student)
     {
         StudentService service = new();
-        service.Add(this);
+        service.Add(student);
     }
 
     public override string ToString()

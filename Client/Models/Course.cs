@@ -10,6 +10,7 @@ public class Course
     public required bool ClassRoom { get; set; }
     public string? Start { get; set; }
     public string? Stop { get; set; }
+    public List<Student> Students { get; set; } = [];
 
     public Course(string courseTitle)
     {
